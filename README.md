@@ -67,3 +67,23 @@ Attributes
 Usage
 -----
 
+Berksfile
+
+```
+cookbook 'pyenv', git: 'https://github.com/mistymagich/chef-pyenv.git'
+```
+
+レシピファイルの中で
+
+```ruby
+include_recipe "pyenv"
+```
+
+またはchef-soloのjsonのrun_listに
+
+```json
+{
+    "run_list": ["recipe[pyenv]"]
+}
+```
+
